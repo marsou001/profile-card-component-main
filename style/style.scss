@@ -1,8 +1,99 @@
+$header: hsl(229, 23%, 23%);
+$sub-text: hsl(227, 10%, 46%);
+
 body {
+    color: $sub-text;
+    background-color: hsl(185, 75%, 39%);
+    // background-image: url('../images/bg-pattern-top.svg');
+    // background-image: url('../images/bg-pattern-bottom.svg');
+    font-size: 18px;
+    font-family: 'Kumbh Sans';
     margin: 0;
+    h1 {
+        color: $header;
+    }
 }
 main {
-    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
+    svg {
+        opacity: 0.5;
+        position: absolute;
+        transform: scale(0.5);        
+        z-index: -1;
+        &#svg-1 {
+            top: 20%;
+            left: -15%;
+        }
+        &#svg-2 {
+            top: -80%;
+            left: -150%;
+        }
+    }
+    .card {
+        background-color: white;
+        width: 90%;
+        height: 55%;
+        border-radius: 18px;
+        .card-top {
+            background-image: url('../images/bg-pattern-card.svg');
+            width: 100%;
+            height: 40%;
+            border-radius: inherit;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .card-bottom {
+            height: 60%;
+            .intro {
+                text-align: center;
+                height: 63%;
+                margin: auto;
+                border-bottom: 1px solid hsla(227, 10%, 46%, 0.2);
+                img {
+                    position: relative;
+                    top: -50px;
+                    border: 5px solid white;
+                    border-radius: 50%;
+                }
+                .intro-container {
+                    position: relative;
+                    top: -30%;
+                    .intro-name {
+                        h1 {
+                            font-size: 18px;
+                            display: inline-block;
+                            margin: 5px;
+                        }
+                    }
+                    .intro-location {
+                        p {
+                            font-size: 0.8rem;
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+            .stats {
+                text-align: center;
+                height: 37%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                h1 {
+                    font-size: 18px;
+                    margin: 0;
+                }
+                span {
+                    font-size: 0.7rem;
+                    letter-spacing: 0.1rem;
+                }
+            }
+        }
+    }
 }

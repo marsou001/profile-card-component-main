@@ -1,10 +1,119 @@
 body {
+  color: #6a6f81;
+  background-color: #19a2ae;
+  font-size: 18px;
+  font-family: 'Kumbh Sans';
   margin: 0;
 }
 
+body h1 {
+  color: #2d3248;
+}
+
 main {
-  background-color: green;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
+}
+
+main svg {
+  opacity: 0.5;
+  position: absolute;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  z-index: -1;
+}
+
+main svg#svg-1 {
+  top: 20%;
+  left: -15%;
+}
+
+main svg#svg-2 {
+  top: -80%;
+  left: -150%;
+}
+
+main .card {
+  background-color: white;
+  width: 90%;
+  height: 55%;
+  border-radius: 18px;
+}
+
+main .card .card-top {
+  background-image: url("../images/bg-pattern-card.svg");
+  width: 100%;
+  height: 40%;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+main .card .card-bottom {
+  height: 60%;
+}
+
+main .card .card-bottom .intro {
+  text-align: center;
+  height: 63%;
+  margin: auto;
+  border-bottom: 1px solid rgba(106, 111, 129, 0.2);
+}
+
+main .card .card-bottom .intro img {
+  position: relative;
+  top: -50px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+main .card .card-bottom .intro .intro-container {
+  position: relative;
+  top: -30%;
+}
+
+main .card .card-bottom .intro .intro-container .intro-name h1 {
+  font-size: 18px;
+  display: inline-block;
+  margin: 5px;
+}
+
+main .card .card-bottom .intro .intro-container .intro-location p {
+  font-size: 0.8rem;
+  margin: 5px;
+}
+
+main .card .card-bottom .stats {
+  text-align: center;
+  height: 37%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card .card-bottom .stats h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+main .card .card-bottom .stats span {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
 }
 /*# sourceMappingURL=style.css.map */
