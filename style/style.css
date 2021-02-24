@@ -39,16 +39,37 @@ main svg#svg-1 {
   left: -15%;
 }
 
+@media (min-width: 1440px) {
+  main svg#svg-1 {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 main svg#svg-2 {
   top: -80%;
   left: -150%;
 }
 
+@media (min-width: 1440px) {
+  main svg#svg-2 {
+    top: -80%;
+    left: -20%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 main .card {
   background-color: white;
-  width: 90%;
+  width: 85%;
+  max-width: 350px;
   height: 55%;
   border-radius: 18px;
+  -webkit-box-shadow: 1px 3px 64px 18px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 3px 64px 18px rgba(0, 0, 0, 0.1);
 }
 
 main .card .card-top {
